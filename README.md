@@ -72,15 +72,15 @@ To prove a particular event (upload or deletion), the following data is provided
 ## Verification Steps:
 
 **1. Recompute the Leaf Hash:**
-Use the provided metadata (including dummy file data and identifier) to recompute the leaf hash.
+We use the provided metadata (including dummy file data and identifier) to recompute the leaf hash.
 
 **2. Reconstruct the Path:**
-Iteratively combine the leaf hash with its sibling hashes.
+Then we iteratively combine the leaf hash with its sibling hashes.
 
 **3. Compare with On-Chain Root:**
-Confirm that the reconstructed Merkle root matches the on-chain stored root.
+We can then confirm that the reconstructed Merkle root matches the on-chain stored root.
 
-This process confirms that the event (upload or deletion) was indeed recorded at the given timestamp.
+This process would also confirm that the event (upload or deletion) was indeed recorded at the given timestamp.
 
 ## 4. Sample Metadata for Hash Computation
 Below are examples of JSON representations for both upload and deletion events using dummy text:
@@ -117,6 +117,7 @@ By adopting a static Merkle tree approach, our system provides an immutable reco
 **Merkle Root Updates:** Every time the system computes and submits a new Merkle root to the blockchain, a small fee can be charged to cover the operational and transaction costs. This could be a fixed fee or a percentage of the overall transaction value.
 
 **Batching and Premium Options:** Users who require more frequent updates (e.g., enterprise clients) could pay a premium for batching transactions or for priority processing.
+(we are still workshopping these ideas but we are open to opinions 😊)
 
 ## 6. Connecting to the Polkadot Virtual Machine (PVM) for On-Chain Updates
 
