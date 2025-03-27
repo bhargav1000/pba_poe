@@ -4,6 +4,9 @@
 
 ## Preface
 With the introduction of AI, proof of ownership is paramount to securing a humane identity for all our files. This enables us to engage with global applications while ensuring overall "netizenship" without compromising our identities, and it ensures that our digital assets and beyond are rightfully owned by individuals rather than being controlled by a centralized authority.
+![We all deserve ownership of our content](https://media.licdn.com/dms/image/v2/D4D12AQGcVe1tn-wcSA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1735793407946?e=2147483647&v=beta&t=yCKWQVokDXgrZn0s1pwK7PW_G_5hrZjvY1734e7XJOQ)
+
+(Referenced from: https://www.linkedin.com/pulse/human-version-ai-mynextdeveloper-dob5f)
 
 ## Abstract
 We present a decentralized proof-of-existence system for digital files using a static Merkle tree. Each user action (e.g., file upload or deletion) is recorded as a separate, immutable leaf in the Merkle tree. A key feature of this system is its ability to prove that a file was deleted at a specific timestamp, without removing historical data. Instead, deletion is recorded as an independent event, preserving full auditability and transparency.
